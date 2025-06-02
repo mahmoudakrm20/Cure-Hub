@@ -1,7 +1,7 @@
-import { Home, Calendar, Users, Settings } from "lucide-react";
+import { LayoutDashboard, Calendar, Users, Settings } from "lucide-react";
 import { NavLink } from "react-router-dom";
 const navItems = [
-  { label: "Dashboard", icon: Home, to: "/" },
+  { label: "Dashboard", icon: LayoutDashboard, to: "/" },
   { label: "Appointments", icon: Calendar, to: "/appointments" },
   { label: "Patients", icon: Users, to: "/patients" },
 ];
@@ -18,7 +18,9 @@ export default function Sidebar() {
             to={to}
             className={({ isActive }) =>
               `flex items-center gap-3 mt-5 px-8 py-3 rounded hover:bg-cyan-200 transition  ${
-                isActive ? " bg-cyan-100 text-cyan-600 font-bold border-r-4 border-cyan-600"  : "text-gray-400 font-semibold"
+                isActive ? " bg-cyan-100 text-cyan-600 font-bold border-r-4 border-cyan-600"  
+                : 
+                "text-gray-400 font-semibold"
               }`
             }
           >
@@ -26,6 +28,7 @@ export default function Sidebar() {
            <span className="text-inherit ">{label}</span>
           </NavLink>
        ))}
+       {/* it's seperated because it has no navigation */}
        <NavLink
         className="flex items-center  gap-3 mt-5 px-8 py-3  rounded 
          hover:bg-cyan-200 transition text-gray-400 font-semibold"
