@@ -1,6 +1,6 @@
 export default function Dashboard() {
   return (
-    <div>
+    <div className="bg-gray-300">
       Welcome to the Dashboard!
     </div>
   );
