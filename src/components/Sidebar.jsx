@@ -9,7 +9,7 @@ export default function Sidebar() {
   return (
     <aside className="flex flex-col h-screen w-64 bg-white py-1">
         <div>
-          <img className="w-48 m-auto p-2" src="/carehub_logo-DYhzqRw5.png" />
+          <img className="w-48 m-auto p-2 cursor-pointer" src="/carehub_logo-DYhzqRw5.png" />
         </div>
         <nav className="mt-8">
           {navItems.map(({ label, icon: Icon, to }) => (

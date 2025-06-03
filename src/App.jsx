@@ -13,8 +13,8 @@ export default function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Dashboard />} />
           <Route path="/appointments" element={<Appointments/>} >
-          <Route index element={<AppointmentList />} />
-            <Route path="requests" element={<AppointmentRequests />} />
+          <Route index element={<AppointmentRequests />} />
+            <Route path="list" element={<AppointmentList />} />
             <Route path="schedule" element={<DoctorSchedule />} />
           </Route>
           <Route path="/patients" element={<div>Patients</div>} />
