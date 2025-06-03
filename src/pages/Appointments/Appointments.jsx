@@ -3,7 +3,7 @@ import { Plus, Filter } from "lucide-react";
 
 export default function Appointments() {
   return (
-    <div className="p-6 bg-gray-100 space-y-6">
+    <div className="p-6 bg-gray-100 space-y-6 ">
       {/* Header Tabs + Controls */}
       <div className="flex items-center justify-between  bg-white p-5 rounded-xl">
         {/* Tabs */}
