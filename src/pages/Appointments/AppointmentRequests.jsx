@@ -57,7 +57,7 @@ export default function AppointmentRequests() {
               <td className="py-2 px-4">{item.doctor}</td>
               <td className="py-2 px-4">{item.time}</td>
               <td className="py-2 px-4">{item.date}</td>
-              <td className="py-2 px-4 flex gap-3 ">
+              <td className="py-2 px-4 flex gap-3">
                 <button
                   type="button"
                   className="bg-green-200 rounded-full text-green-600 p-1  hover:bg-green-300 transition cursor-pointer"
