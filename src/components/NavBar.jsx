@@ -31,7 +31,7 @@ function Navbar() {
         {/* Doctor info */}
         <div className="flex items-center gap-6">
           <img
-            src="/doctor.avif"  
+            src="/doctor5.jpg"  
             alt="Doctor"
             className="w-10 h-10 rounded-full object-cover object-center"
           />
