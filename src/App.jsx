@@ -5,6 +5,7 @@ import Appointments from "./pages/Appointments/Appointments";
 import AppointmentList from "./pages/Appointments/AppointmentList";
 import AppointmentRequests from "./pages/Appointments/AppointmentRequests";
 import DoctorSchedule from "./pages/Appointments/DoctorSchedule";
+import Patients from "./pages/Patients/Patients";
 
 export default function App() {
   return (
@@ -17,7 +18,7 @@ export default function App() {
             <Route path="list" element={<AppointmentList />} />
             <Route path="schedule" element={<DoctorSchedule />} />
           </Route>
-          <Route path="/patients" element={<div>Patients</div>} />
+          <Route path="/patients" element={<Patients/>} />
         </Route>
       </Routes>
     </BrowserRouter>
