@@ -1,6 +1,6 @@
 export default function ProfileCard() {
   return (
-    <div className="bg-white rounded-xl shadow p-0 overflow-hidden max-w-3xl w-full">
+    <div className="bg-white rounded-xl shadow p-0 overflow-hidden max-w-3xl w-full h-80">
       <div className="flex">
         {/* Left Section */}
         <div className="w-1/3 flex flex-col items-center justify-center py-6 border-r-2 border-gray-300">

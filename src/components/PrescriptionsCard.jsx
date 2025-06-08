@@ -91,7 +91,7 @@ export default function PrescriptionsCard() {
   );
 
   return (
-    <div className="bg-white rounded-xl shadow-sm p-4 max-w-sm mx-auto">
+    <div className="bg-white rounded-xl shadow-sm p-4 max-w-sm">
       <div className="flex justify-between mb-4">
         <h2 className="text-md font-semibold text-gray-800">Prescriptions</h2>
         <button onClick={() => openModal()} className="text-cyan-600 font-semibold text-sm cursor-pointer">+ Add Prescription</button>

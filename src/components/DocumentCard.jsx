@@ -51,12 +51,12 @@ export default function DocumentsCard() {
   };
 
   return (
-    <div className="bg-white rounded-xl shadow p-4 w-full max-w-sm relative">
+    <div className="bg-white rounded-xl shadow h-80 p-4 w-full max-w-sm relative ">
       {/* Header */}
       <div className="flex justify-between items-center mb-4">
         <h3 className="text-lg font-semibold">Documents</h3>
         <button
-          className="text-cyan-600 text-sm font-medium hover:underline flex items-center gap-1 cursor-pointer"
+          className="text-cyan-600 text-sm font-medium  flex items-center gap-1 cursor-pointer"
           onClick={() => setShowModal(true)}
         >
           <Paperclip size={16} /> Add Files
@@ -64,7 +64,7 @@ export default function DocumentsCard() {
       </div>
 
       {/* File List */}
-      <div className="space-y-2 max-h-60 overflow-y-auto scrollbar-thin scrollbar-thumb-gray-300">
+      <div className="space-y-2 max-h-52 overflow-y-auto scrollbar-thin scrollbar-thumb-gray-300">
         {files.map((file, index) => (
           <div
             key={index}
@@ -100,7 +100,7 @@ export default function DocumentsCard() {
 
     
       <div className="mt-4 text-center">
-        <button className="text-sm text-gray-500 hover:underline">See All</button>
+        <button className="text-sm text-gray-500">See All</button>
       </div>
 
       {/* Upload Modal */}
