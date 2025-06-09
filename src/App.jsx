@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./layout/Layout";
-import Dashboard from "./pages/Dashboard";
+import Dashboard from "./pages/Dashboard/Dashboard";
 import Appointments from "./pages/Appointments/Appointments";
 import AppointmentList from "./pages/Appointments/AppointmentList";
 import AppointmentRequests from "./pages/Appointments/AppointmentRequests";
