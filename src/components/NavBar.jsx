@@ -10,7 +10,7 @@ function Navbar() {
         <input
           type="text"
           placeholder="Search here..."
-          className="bg-transparent outline-none flex-grow text-gray-700"
+          className="bg-transparent outline-none  flex-grow text-gray-700"
         />
       </div>
 

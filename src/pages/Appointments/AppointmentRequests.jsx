@@ -34,7 +34,7 @@ export default function AppointmentRequests() {
   return (
     <div className="bg-white rounded-xl p-6 shadow-md ">
       <table className="w-full text-left text-sm text-gray-700 ">
-        <thead className="bg-cyan-500  rounded-xl">
+        <thead className="bg-cyan-600  rounded-xl">
           <tr>
             <th className="py-3 px-4 text-white font-semibold rounded-l-xl">Patient Name</th>
             <th className="py-3 px-4 text-white font-semibold">Gender</th>

@@ -24,25 +24,26 @@ export default function Patients() {
         </div>
       </div>
 
-      {/* First row*/}
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-        <div className="lg:col-span-2">
-          <PatientsInfo />
-        </div>
-        <div>
-          <DocumentCard />
-        </div>
-      </div>
+     {/* First row */}
+<div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+  <div className="md:col-span-2">
+    <PatientsInfo />
+  </div>
+  <div className="md:col-span-1">
+    <DocumentCard />
+  </div>
+</div>
 
-      {/*  Second row */}
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-        <div className="lg:col-span-2">
-          <TimelineCard />
-        </div>
-        <div>
-          <PrescriptionsCard />
-        </div>
-      </div>
+{/* Second row */}
+<div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+  <div className="md:col-span-2">
+    <TimelineCard />
+  </div>
+  <div className="md:col-span-1">
+    <PrescriptionsCard />
+  </div>
+</div>
+
     </div>
   );
 }

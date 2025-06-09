@@ -1,6 +1,6 @@
 export default function ProfileCard() {
   return (
-    <div className="bg-white rounded-xl shadow p-0 overflow-hidden max-w-3xl w-full h-80">
+    <div className="bg-white rounded-xl shadow p-0 overflow-hidden  w-full h-80">
       <div className="flex">
         {/* Left Section */}
         <div className="w-1/3 flex flex-col items-center justify-center py-6 border-r-2 border-gray-300">
@@ -25,7 +25,7 @@ export default function ProfileCard() {
             </div>
           </div>
 
-          <button className="bg-cyan-500 hover:bg-cyan-600 text-white text-sm px-8 py-1.5 rounded">
+          <button className="bg-cyan-600 hover:bg-cyan-500 text-white text-sm px-8 py-1.5 rounded">
             Send Message
           </button>
         </div>

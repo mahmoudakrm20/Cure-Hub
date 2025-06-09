@@ -6,7 +6,7 @@ const doctorSchedule = [
     time: "10:00–12:00 PM",
     doctor: "Dr. John",
     specialty: "Dentist",
-    color: "orange",
+    color: "red",
     image: "/doctor5.jpg",
   },
   {
@@ -33,7 +33,7 @@ const doctorSchedule = [
     time: "10:00–12:00 PM",
     doctor: "Dr. Laila",
     specialty: "GIT",
-    color: "cyan",
+    color: "red",
     image: "/doctor2.png",
   },
   {
@@ -42,7 +42,7 @@ const doctorSchedule = [
     time: "1:00–3:00 PM",
     doctor: "Dr. Hana",
     specialty: "ENT",
-    color: "purple",
+    color: "green",
     image: "/doctor.avif",
   },
   {
@@ -51,7 +51,7 @@ const doctorSchedule = [
     time: "5:00–7:00 PM",
     doctor: "Dr. Ali",
     specialty: "Dentist",
-    color: "orange",
+    color: "red",
     image: "/doctor1.png",
   },
   {
@@ -74,7 +74,7 @@ export default function DoctorSchedule() {
     <div className="bg-white p-4 rounded-xl shadow-md overflow-x-auto">
       <div className="flex justify-start gap-3 items-center mb-4">
         <button className="bg-cyan-600 text-white px-4 py-2 rounded flex items-center gap-2">June <CalendarDays size={20}/></button>
-        <button className="border border-cyan-500 px-3 py-2 rounded flex gap-2 items-center "> <FilePenLine size={18} /> Edit </button>
+        <button className="border border-cyan-600 px-3 py-2 rounded flex gap-2 items-center "> <FilePenLine size={18} /> Edit </button>
       </div>
 
       <div className="min-w-[900px] border border-gray-300">

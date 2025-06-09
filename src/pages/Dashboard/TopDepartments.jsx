@@ -30,7 +30,7 @@ export default function TopDepartments() {
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
   return (
-    <div className="bg-white rounded-xl p-4 shadow flex flex-col gap-4 h-full">
+    <div className="bg-white rounded-xl min-w-90 p-4 shadow flex flex-col gap-4 h-full">
       {/* Header */}
       <div className="flex justify-between items-center">
         <h2 className="text-sm font-bold text-gray-800">

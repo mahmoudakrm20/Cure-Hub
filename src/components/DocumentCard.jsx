@@ -51,7 +51,7 @@ export default function DocumentsCard() {
   };
 
   return (
-    <div className="bg-white rounded-xl shadow h-80 p-4 w-full max-w-sm relative ">
+    <div className="bg-white rounded-xl shadow h-80 p-4 w-full relative ">
       {/* Header */}
       <div className="flex justify-between items-center mb-4">
         <h3 className="text-lg font-semibold">Documents</h3>
@@ -64,7 +64,7 @@ export default function DocumentsCard() {
       </div>
 
       {/* File List */}
-      <div className="space-y-2 max-h-52 overflow-y-auto scrollbar-thin scrollbar-thumb-gray-300">
+      <div className="space-y-2 h-52 overflow-y-auto scrollbar-thin scrollbar-thumb-gray-300">
         {files.map((file, index) => (
           <div
             key={index}
@@ -80,7 +80,7 @@ export default function DocumentsCard() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Download size={16} className="cursor-pointer text-cyan-600 hover:text-cyan-800" />
+                <Download size={16} className="cursor-pointer text-cyan-600 hover:text-cyan-700" />
               </a>
               <button
                 onClick={() => {
@@ -121,7 +121,7 @@ export default function DocumentsCard() {
       {/* Drag and Drop Area */}
       <div
         className={`border-2 border-dashed ${
-          dragActive ? "border-cyan-600 bg-cyan-50" : "border-cyan-400"
+          dragActive ? "border-cyan-600 bg-cyan-50" : "border-cyan-600"
         } p-6 rounded-lg text-center`}
         onDragOver={handleDragOver}
         onDragLeave={handleDragLeave}
@@ -154,7 +154,7 @@ export default function DocumentsCard() {
       <div className="mt-4 flex justify-between">
         <button
           onClick={() => setShowModal(false)}
-          className="px-4 py-1 rounded border text-gray-600 border-cyan-500 hover:bg-gray-100 text-sm cursor-pointer"
+          className="px-4 py-1 rounded border text-gray-600 border-cyan-600 hover:bg-gray-100 text-sm cursor-pointer"
         >
           Cancel
         </button>

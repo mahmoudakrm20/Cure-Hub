@@ -78,7 +78,7 @@ export default function PrescriptionsCard() {
       <input
         name={name}
         placeholder={placeholder}
-        className="w-full border rounded px-2 py-1 border-cyan-500 text-sm"
+        className="w-full border rounded px-2 py-1 border-cyan-600 text-sm"
         value={formik.values[name]}
         onChange={formik.handleChange}
         onBlur={formik.handleBlur}
@@ -91,13 +91,13 @@ export default function PrescriptionsCard() {
   );
 
   return (
-    <div className="bg-white rounded-xl shadow-sm p-4 max-w-sm">
+    <div className="bg-white rounded-xl shadow-sm p-4 ">
       <div className="flex justify-between mb-4">
         <h2 className="text-md font-semibold text-gray-800">Prescriptions</h2>
         <button onClick={() => openModal()} className="text-cyan-600 font-semibold text-sm cursor-pointer">+ Add Prescription</button>
       </div>
 
-      <div className="max-h-64 overflow-y-auto pr-1">
+      <div className="h-90 overflow-y-auto pr-1">
         {prescriptions.map((item, index) => (
           <div key={index} onClick={() => openModal(index)} className="cursor-pointer text-sm border-b border-gray-300 py-2">
             <div className="grid grid-cols-3 text-gray-500 font-semibold text-xs mb-1">

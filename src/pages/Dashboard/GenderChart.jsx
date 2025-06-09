@@ -26,13 +26,13 @@ export default function GenderChart() {
               Women 67%
             </span>
             <span className="flex items-center gap-1">
-              <span className="w-3 h-3 bg-cyan-400  inline-block" />
+              <span className="w-3 h-3 bg-cyan-500  inline-block" />
               Men 33%
             </span>
           </div>
 
-          <button className="flex items-center text-sm text-cyan-600 border border-cyan-500 px-2 py-1 rounded-md">
-            Weekly <ChevronDown size={14} className="ml-1 text-cyan-560" />
+          <button className="flex items-center text-sm text-cyan-600 border border-cyan-600 px-2 py-1 rounded-md">
+            Weekly <ChevronDown size={14} className="ml-1 text-cyan-600" />
           </button>
         </div>
       </div>

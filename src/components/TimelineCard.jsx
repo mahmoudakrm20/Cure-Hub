@@ -46,7 +46,7 @@ export default function TimelineCard() {
   const [activeTab, setActiveTab] = useState("upcoming");
 
   return (
-    <div className="bg-gray-100 rounded-xl shadow-md max-w-3xl">
+    <div className="bg-gray-100 shadow-md ">
       {/* Tabs Container with gray background */}
       <div className="bg-white px-6 pt-8 pb-4 rounded-t-xl">
         <div className="flex justify-between items-center">
@@ -81,7 +81,7 @@ export default function TimelineCard() {
       </div>
 
       {/* Scrollable Content */}
-      <div className="p-6 pt-1 h-[440px] bg-white  max-h-64 overflow-y-auto overflow-x-hidden">
+      <div className="p-6 pt-1  bg-white  h-90 overflow-y-auto overflow-x-hidden">
         <div className="relative p-3 bg-gray-100">
           {/* Line*/}
           <div className="absolute left-15 top-0 bottom-0 w-px bg-gray-200 z-0" />
@@ -96,7 +96,7 @@ export default function TimelineCard() {
 
               {/* Dot */}
               <div className="absolute left-10 top-7 z-10">
-                <div className="w-4 h-4 bg-cyan-500 rounded-full border-4 border-white" />
+                <div className="w-4 h-4 bg-cyan-600 rounded-full border-4 border-white" />
               </div>
 
               {/* Cards */}
@@ -147,6 +147,7 @@ export default function TimelineCard() {
           ))}
         </div>
       </div>
+      <div className="h-3 bg-white rounded-2xl" ></div>
     </div>
   );
 }

@@ -3,7 +3,7 @@ import { Plus, Filter } from "lucide-react";
 
 export default function Appointments() {
   return (
-    <div className="p-6 bg-gray-100 space-y-6 ">
+    <div className="p-6 bg-gray-100 space-y-6 min-h-screen">
       {/* Header Tabs + Controls */}
       <div className="flex items-center justify-between  bg-white p-5 rounded-xl">
         {/* Tabs */}
@@ -51,10 +51,10 @@ export default function Appointments() {
 
         {/* Controls */}
         <div className="flex items-center gap-3">
-          <button className="flex items-center gap-1 px-3 py-1.5 text-sm text-gray-600 border border-cyan-500 rounded-md hover:bg-gray-100 transition cursor-pointer">
+          <button className="flex items-center gap-1 px-3 py-1.5 text-sm text-gray-600 border border-cyan-600 rounded-md hover:bg-gray-100 transition cursor-pointer">
             <Filter size={16} /> Sort by
           </button>
-          <button className="flex items-center gap-2 px-3 py-1.5 text-sm font-medium text-white border rounded-md bg-cyan-500 hover:bg-cyan-600 transition cursor-pointer">
+          <button className="flex items-center gap-2 px-3 py-1.5 text-sm font-medium text-white border rounded-md bg-cyan-600 hover:bg-cyan-500 transition cursor-pointer">
             <Plus size={16} /> Add New
           </button>
 
