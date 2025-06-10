@@ -6,10 +6,13 @@ import AppointmentList from "./pages/Appointments/AppointmentList";
 import AppointmentRequests from "./pages/Appointments/AppointmentRequests";
 import DoctorSchedule from "./pages/Appointments/DoctorSchedule";
 import Patients from "./pages/Patients/Patients";
+import ScrollToTop from "./components/ScrollToTop";
+import NotFound from "./components/NotFound";
 
 export default function App() {
   return (
     <BrowserRouter>
+    <ScrollToTop/>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Dashboard />} />
@@ -19,6 +22,7 @@ export default function App() {
             <Route path="schedule" element={<DoctorSchedule />} />
           </Route>
           <Route path="/patients" element={<Patients/>} />
+          <Route path="*" element={<NotFound/>}/>
         </Route>
       </Routes>
     </BrowserRouter>

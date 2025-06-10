@@ -46,7 +46,7 @@ export default function TimelineCard() {
   const [activeTab, setActiveTab] = useState("upcoming");
 
   return (
-    <div className="bg-gray-100 shadow-md ">
+    <div className="bg-gray-100 shadow-md min-w-md ">
       {/* Tabs Container with gray background */}
       <div className="bg-white px-6 pt-8 pb-4 rounded-t-xl">
         <div className="flex justify-between items-center">
@@ -73,7 +73,7 @@ export default function TimelineCard() {
             </button>
           </div>
 
-          <button className="flex items-center gap-1 text-cyan-600 text-sm font-medium hover:underline">
+          <button className="flex items-center gap-1 text-cyan-600 text-sm font-medium">
             <FilePlus className="w-4 h-4" />
             Add Appointment
           </button>
@@ -81,7 +81,7 @@ export default function TimelineCard() {
       </div>
 
       {/* Scrollable Content */}
-      <div className="p-6 pt-1  bg-white  h-90 overflow-y-auto overflow-x-hidden">
+      <div className="pt-4 pl-4 pr-4  bg-white h-90 overflow-y-auto overflow-x-hidden">
         <div className="relative p-3 bg-gray-100">
           {/* Line*/}
           <div className="absolute left-15 top-0 bottom-0 w-px bg-gray-200 z-0" />
@@ -106,7 +106,8 @@ export default function TimelineCard() {
                     key={i}
                     className="bg-white border border-gray-200 rounded-lg p-4 flex items-center justify-between shadow-sm"
                   >
-                    <div className="flex gap-10 text-sm text-gray-700">
+                    <div className="flex gap-10 text-sm text-gray-700 overflow-x-auto scrollbar-thin scrollbar-thumb-gray-300">
+
                       <div>
                         <p className="text-gray-400">Dateeee</p>
                         <p className="font-semibold">26.12.2020</p>

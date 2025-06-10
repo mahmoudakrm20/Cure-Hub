@@ -59,9 +59,9 @@ export default function PrescriptionsCard() {
       specialty: Yup.string().required("Speciality is required"),
       age: Yup.number().required("Age is required").max(100,"Age must be less than or equal to 100"),
       gender: Yup.string().required("Gender is required"),
-      symptoms: Yup.string().required("Symptoms are required").min(10,"at least 10 letters"),
-      diagnosis: Yup.string().required("Diagnosis is required").min(10,"at least 10 letters"),
-      rx: Yup.string().required("Prescription is required").min(10,"at least 10 letters"),
+      symptoms: Yup.string().required("Symptoms are required").min(4,"at least 4 letters"),
+      diagnosis: Yup.string().required("Diagnosis is required").min(4,"at least 4 letters"),
+      rx: Yup.string().required("Prescription is required").min(4,"at least 4 letters"),
       signature: Yup.string().required("Doctor signature is required"),
     }),
     onSubmit: (values) => {
@@ -91,7 +91,7 @@ export default function PrescriptionsCard() {
   );
 
   return (
-    <div className="bg-white rounded-xl shadow-sm p-4 ">
+    <div className="bg-white rounded-xl min-w-80 shadow-sm p-4 ">
       <div className="flex justify-between mb-4">
         <h2 className="text-md font-semibold text-gray-800">Prescriptions</h2>
         <button onClick={() => openModal()} className="text-cyan-600 font-semibold text-sm cursor-pointer">+ Add Prescription</button>
@@ -106,9 +106,9 @@ export default function PrescriptionsCard() {
               <span>Specialty</span>
             </div>
             <div className="grid grid-cols-3 text-gray-800 text-sm">
-              <span>{item.date}</span>
-              <span>{item.symptoms}</span>
-              <span>{item.specialty}</span>
+              <span className="truncate">{item.date}</span>
+              <span className="truncate">{item.symptoms}</span>
+              <span className="truncate">{item.specialty}</span>
             </div>
           </div>
         ))}

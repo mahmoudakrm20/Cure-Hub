@@ -1,9 +1,9 @@
 export default function ProfileCard() {
   return (
-    <div className="bg-white rounded-xl shadow p-0 overflow-hidden  w-full h-80">
-      <div className="flex">
+    <div className="bg-white rounded-xl shadow overflow-hidden w-full min-h-80">
+      <div className="flex flex-row h-full">
         {/* Left Section */}
-        <div className="w-1/3 flex flex-col items-center justify-center py-6 border-r-2 border-gray-300">
+        <div className="md:w-1/3 w-full flex flex-col items-center justify-center py-6 border-b md:border-b-0 border-r-2 border-gray-300">
           <img
             src="https://randomuser.me/api/portraits/women/79.jpg"
             alt="Profile"
@@ -31,10 +31,10 @@ export default function ProfileCard() {
         </div>
 
         {/* Right Section */}
-        <div className="w-2/3 py-6 pl-10">
-          <div className="flex flex-col   justify-between min-h-[260px] text-sm text-gray-700">
+        <div className="md:w-2/3 w-full py-6 px-6 overflow-y-auto">
+          <div className="flex flex-col justify-between text-sm text-gray-700 h-full space-y-4">
             {/* Row 1 */}
-            <div className="flex gap-6">
+            <div className="flex flex-col sm:flex-row gap-4">
               <div className="flex-1">
                 <p className="text-gray-500">Gender</p>
                 <p className="font-medium">Female</p>
@@ -50,7 +50,7 @@ export default function ProfileCard() {
             </div>
 
             {/* Row 2 */}
-            <div className="flex gap-6">
+            <div className="flex flex-col sm:flex-row gap-4">
               <div className="flex-1">
                 <p className="text-gray-500">Insurance</p>
                 <p className="font-medium">Med Right</p>
@@ -66,7 +66,7 @@ export default function ProfileCard() {
             </div>
 
             {/* Row 3 */}
-            <div className="flex gap-6">
+            <div className="flex flex-col sm:flex-row gap-4">
               <div className="flex-1">
                 <p className="text-gray-500">Address</p>
                 <p className="font-medium">12 Loran, Alex.</p>
@@ -75,7 +75,7 @@ export default function ProfileCard() {
                 <p className="text-gray-500">Postal Code</p>
                 <p className="font-medium">5310002</p>
               </div>
-              <div className="flex-1" /> {/* empty to balance flexbox */}
+              <div className="flex-1" />
             </div>
           </div>
         </div>

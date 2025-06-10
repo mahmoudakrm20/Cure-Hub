@@ -7,7 +7,7 @@ const navItems = [
 ];
 export default function Sidebar() {
   return (
-    <aside className="flex flex-col h-screen w-64 bg-white py-1">
+    <aside className="hidden sm:flex flex-col h-screen w-64 bg-white py-1 ">
         <div>
           <img className="w-48 m-auto p-2 cursor-pointer" src="/carehub_logo-DYhzqRw5.png" />
         </div>

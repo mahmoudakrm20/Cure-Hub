@@ -51,7 +51,7 @@ export default function DocumentsCard() {
   };
 
   return (
-    <div className="bg-white rounded-xl shadow h-80 p-4 w-full relative ">
+    <div className="bg-white rounded-xl min-w-80 shadow h-80 p-4 w-full relative ">
       {/* Header */}
       <div className="flex justify-between items-center mb-4">
         <h3 className="text-lg font-semibold">Documents</h3>
