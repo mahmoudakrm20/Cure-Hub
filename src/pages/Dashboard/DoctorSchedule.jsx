@@ -63,7 +63,7 @@ export default function DoctorSchedule() {
                       <td key={i} className="py-1">
                         <button
                           className={`w-8 h-8 rounded-md ${
-                            day === 8 ? "bg-cyan-500 text-white" : "hover:bg-gray-200"
+                            day === 8 ? "bg-cyan-600 text-white" : "hover:bg-gray-200"
                           }`}
                         >
                           {day}

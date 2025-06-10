@@ -194,7 +194,7 @@ export default function PrescriptionsCard() {
             <label className="text-sm font-semibold">Doctor Signature</label>
             <input
               name="signature"
-              className="border border-cyan-500 rounded px-2 py-1"
+              className="border border-cyan-600 rounded px-2 py-1"
               value={formik.values.signature}
               onChange={formik.handleChange}
               onBlur={formik.handleBlur}

@@ -17,7 +17,7 @@ export default function Sidebar() {
             key={label}
             to={to}
             className={({ isActive }) =>
-              `flex items-center gap-3 mt-5 px-8 py-3 rounded hover:bg-cyan-200 transition  ${
+              `flex items-center gap-3 mt-5 px-8 py-3 rounded hover:bg-cyan-100 transition  ${
                 isActive ? " bg-cyan-100 text-cyan-600 font-bold border-r-4 border-cyan-600"  
                 : 
                 "text-gray-400 font-semibold"
@@ -31,7 +31,7 @@ export default function Sidebar() {
        {/* it's seperated because it has no navigation */}
        <NavLink
         className="flex items-center  gap-3 mt-5 px-8 py-3  rounded 
-         hover:bg-cyan-200 transition text-gray-400 font-semibold"
+         hover:bg-cyan-100 transition text-gray-400 font-semibold"
             >
            <Settings className="text-gray-400" size={20} />
            <span className="text-gray-400">Settings</span>

@@ -1,7 +1,7 @@
-import DocumentCard from '../../components/DocumentCard';
-import PatientsInfo from '../../components/PatientsInfo';
-import PrescriptionsCard from '../../components/PrescriptionsCard';
-import TimelineCard from '../../components/TimelineCard';
+import DocumentCard from './DocumentCard';
+import PatientsInfo from './PatientsInfo';
+import PrescriptionsCard from './PrescriptionsCard';
+import TimelineCard from './TimelineCard';
 
 import { Pencil, Printer } from 'lucide-react';
 

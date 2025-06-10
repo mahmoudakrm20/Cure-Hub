@@ -26,7 +26,7 @@ export default function GenderChart() {
               Women 67%
             </span>
             <span className="flex items-center gap-1">
-              <span className="w-3 h-3 bg-cyan-500  inline-block" />
+              <span className="w-3 h-3 bg-cyan-600  inline-block" />
               Men 33%
             </span>
           </div>

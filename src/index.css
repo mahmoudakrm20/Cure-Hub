@@ -1,1 +1,7 @@
 @import "tailwindcss";
+.text-cyan-600{
+    color:#00A8B5 !important
+}
+.bg-cyan-600{
+    background-color: #00A8B5 !important;
+}
