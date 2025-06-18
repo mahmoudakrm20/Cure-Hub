@@ -18,6 +18,10 @@ Lucide Icons – Modern and elegant icons
 
 Recharts – Data visualization and charts
 
+Formik – For handling forms efficiently
+
+Yup – Schema validation for form inputs
+
 Local Storage – To persist prescriptions and documents
 
 💡 Features
@@ -36,3 +40,7 @@ Visualize data with clean, responsive charts using Recharts.
 
 SPA Navigation
 Smooth and fast routing with React Router DOM.
+
+Validated Forms
+Create and manage prescriptions/documents using forms built with Formik, and validated with Yup to ensure accurate and clean data input.
+
