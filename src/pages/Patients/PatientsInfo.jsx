@@ -3,7 +3,7 @@ export default function ProfileCard() {
     <div className="bg-white rounded-xl shadow overflow-hidden w-full min-h-80">
       <div className="flex flex-row h-full">
         {/* Left Section */}
-        <div className="md:w-1/3 w-full flex flex-col items-center justify-center py-6 border-b md:border-b-0 border-r-2 border-gray-300">
+        <div className="md:w-1/3 w-full flex flex-col items-center justify-center py-10 border-b md:border-b-0 border-r-2 border-gray-200">
           <img
             src="https://randomuser.me/api/portraits/women/79.jpg"
             alt="Profile"
