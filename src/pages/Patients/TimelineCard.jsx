@@ -109,7 +109,7 @@ export default function TimelineCard() {
                     <div className="flex gap-10 text-sm text-gray-700 overflow-x-auto scrollbar-thin scrollbar-thumb-gray-300">
 
                       <div>
-                        <p className="text-gray-400">Dateeee</p>
+                        <p className="text-gray-400">Date</p>
                         <p className="font-semibold">26.12.2020</p>
                       </div>
                       <div>
